@@ -4,16 +4,14 @@
   <div class="items">
       <div class="left-side">
           <button type="button" class="btn-play"><i class="material-icons">play_arrow</i></button>
-          <h2>Guardiões da Galaxia</h2>
+          <h2>{{title.name}}</h2>
           <ul class="infos">
-              <li class="relevance">98% relevante</li>
-              <li class="age age-12"></li>
-              <li class="parts">2 partes</li>
+              <li class="relevance">{{title.relevance}}% relevante</li>
+              <li class="age" [ngClass]="{'age-free': title.age === 0 , 'age-12': title.age === 12, 'age-18': title.age === 18}"></li>
+              <li class="parts">{{title.parts}} partes</li>
           </ul>
           <ul class="categories">
-              <li>Épico</li>
-              <li>Filme de fantasia</li>
-              <li>Viagem no espaço</li>
+              <li *ngfor="let category of title.categories">{{ category}}</li>
           </ul>
       </div>
   </div>
