@@ -33,7 +33,8 @@
   opacity: 1;
 }
 .navbar ul li {
-  padding: .3em 1em}
+  padding: .3em 1em;
+}
 .navbar ul li.divider {
   border-bottom: #999898 1px solid;
   margin: .3em auto;
@@ -53,7 +54,7 @@
   }
 }
 @media (min-width: 992px) {
-  .navbar.bg-dark {
+  .navbar .bg-dark {
       background-color: transparent!important;
       background-image: url "assets/images/header_gradient.png";
       background-repeat: repeat-x;
