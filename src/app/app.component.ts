@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  menuOpened = false;
+
   listTitles =[{
     trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
     cover: 'assets/images/guardios-da-galaxia.jpg',
@@ -31,4 +34,9 @@ export class AppComponent {
     parts: 2,
     categories: ['Epico','Fantasia','Viagem ao Espaço']
   }]
+  setMenuState(state : boolean){
+
+    this.menuOpened = state;
+
+  }
 }
