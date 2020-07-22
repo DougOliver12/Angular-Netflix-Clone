@@ -1,4 +1,4 @@
-<app-nav-bar (menuToogle)="setMenuState($event)"></app-nav-bar>
+<app-nav-bar [opened]="menuOpened" (menuToogle)="setMenuState($event)"></app-nav-bar>
 
 <div class="content-fluid">
 
@@ -10,4 +10,4 @@
 </div>
 <app-footer></app-footer>
 
-<div class="backdrop" *ngIf="MenuOpened" ></div>
+<div class="backdrop" (click)="closedMenu()" *ngIf="menuOpened" ></div>

@@ -6,6 +6,7 @@ import { TitleCasePipe } from '@angular/common';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   menuOpened = false;
 
@@ -34,9 +35,12 @@ export class AppComponent {
     parts: 2,
     categories: ['Epico','Fantasia','Viagem ao Espaço']
   }]
+
   setMenuState(state : boolean){
-
     this.menuOpened = state;
+  }
 
+  closeMenu(){
+    this.menuOpened = false;
   }
 }
