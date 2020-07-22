@@ -5,10 +5,21 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.scss']
 })
-export class TitleComponent implements OnInit {
 
-@Input() title: any;
-  constructor() { }
+export class TitleComponent implements OnInit {
+  @Input() title: any;
+
+  constructor() {
+   }
+
   ngOnInit(): void {
+  }
+
+  stopVideo(){
+
+  }
+
+  playVideo(){
+
   }
 }

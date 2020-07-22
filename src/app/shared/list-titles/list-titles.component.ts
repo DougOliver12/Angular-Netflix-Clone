@@ -5,11 +5,14 @@ import { Component, OnInit, Input} from '@angular/core';
   templateUrl: './list-titles.component.html',
   styleUrls: ['./list-titles.component.scss']
 })
-export class ListTitlesComponent implements OnInit {
 
+export class ListTitlesComponent implements OnInit {
   @Input() title: string;
   @Input() list = [];
-  constructor() { }
+  
+  constructor() {
+  }
+
   ngOnInit() {
   }
 }

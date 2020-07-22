@@ -5,9 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './full-banner.component.html',
   styleUrls: ['./full-banner.component.scss']
 })
-export class FullBannerComponent implements OnInit {
 
-  constructor() { }
+export class FullBannerComponent implements OnInit {
+  constructor() {
+  }
+
   ngOnInit(): void {
   }
 }
