@@ -41,7 +41,16 @@
   font-size: 20px;
   margin: 5px auto;
 }
-.title-item .btn-play {
+.title-item .btn-muted {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.title-item btn i {
+  line-height: 16px;
+  color: white;
+}
+.title-item .btn {
   background: none;
   border: #fff 2px solid;
   border-radius: 16px;

@@ -3,8 +3,8 @@
   <img src="assets/images/guardios-da-galaxia.jpg" alt="Título">
   <div class="items">
       <div class="left-side">
-          <button type="button" class="btn-play"><i class="material-icons">play_arrow</i></button>
-          <button type="button" class="btn-muted" (click)="toggleSound()">
+          <button type="button" class="btn btn-play"><i class="material-icons">play_arrow</i></button>
+          <button type="button" class="btn btn-muted" (click)="toggleSound()">
             <i class="material-icons" *ngIf= "!getMuted()">volume_off</i>
             <i class="material-icons" *ngIf= "getMuted()">volume_up</i>
           </button>
