@@ -5,8 +5,8 @@
       <div class="left-side">
           <button type="button" class="btn-play"><i class="material-icons">play_arrow</i></button>
           <button type="button" class="btn-muted" (click)="toggleSound()">
-            <i class="material-icons" *ngif= "!getMuted()">volume_off</i>
-            <i class="material-icons" *ngif= "getMuted()">volume_up</i>
+            <i class="material-icons" *ngIf= "!getMuted()">volume_off</i>
+            <i class="material-icons" *ngIf= "getMuted()">volume_up</i>
           </button>
           <h2>{{title.name}}</h2>
           <ul class="infos">
@@ -15,7 +15,7 @@
               <li class="parts">{{title.parts}} partes</li>
           </ul>
           <ul class="categories">
-              <li *ngfor="let category of title.categories">{{ category}}</li>
+              <li *ngFor="let category of title.categories">{{ category}}</li>
           </ul>
       </div>
   </div>
