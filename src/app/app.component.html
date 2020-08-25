@@ -1,13 +1,9 @@
 <app-nav-bar [opened]="menuOpened" (menuToogle)="setMenuState($event)"></app-nav-bar>
-
 <div class="content-fluid">
-
- <app-full-banner></app-full-banner>
-
- <app-list-titles title="Adicionado Recentimente" [list]="listTitles"></app-list-titles>
- <app-list-titles title="Em Alta" [list]="listTitles" ></app-list-titles>
- <app-list-titles title="Continuar Assistindo como Douglas" [list]="listTitles"></app-list-titles>
+   <app-full-banner></app-full-banner>
+   <app-list-titles title="Adicionado Recentimente" [list]="listTitles"></app-list-titles>
+   <app-list-titles title="Em Alta" [list]="listTitles" ></app-list-titles>
+   <app-list-titles title="Continuar Assistindo como Douglas" [list]="listTitles"></app-list-titles>
 </div>
 <app-footer></app-footer>
-
 <div class="backdrop" (click)="closedMenu()" *ngIf="menuOpened" ></div>
